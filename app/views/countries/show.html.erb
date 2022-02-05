@@ -1,0 +1,22 @@
+
+<h1>Country</h1>
+
+<div>
+  name<br>
+  <%= @country.name %><br>
+</div>
+
+<div>
+  name_en<br>
+  <%= @country.name_en %>
+</div>
+
+<ul>
+  <li><%= link_to "Edit", edit_country_path(@country) %></li>
+    <li><%= link_to "Destroy", country_path(@country), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+</ul>
+
+

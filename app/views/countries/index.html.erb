@@ -1,0 +1,16 @@
+
+<h1>Articles</h1>
+
+<ul>
+  <% @countries.each do |country| %>
+    <li>
+      <a href="/countries/<%= country.id %>">
+        <%= country.name %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Country", new_country_path %>
+
+
